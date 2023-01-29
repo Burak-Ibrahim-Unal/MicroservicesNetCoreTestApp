@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Burak\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj": {}
+    "C:\\Users\\ibrahimburak.unal\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Burak\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj": {
+    "C:\\Users\\ibrahimburak.unal\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\ibrahimburak.unal\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj",
         "projectName": "UdemyClone.Shared",
-        "projectPath": "C:\\Users\\Burak\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj",
-        "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Burak\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\obj\\",
+        "projectPath": "C:\\Users\\ibrahimburak.unal\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj",
+        "packagesPath": "C:\\Users\\ibrahimburak.unal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ibrahimburak.unal\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ibrahimburak.unal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -5,11 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UdemyClone.CatalogApi.Settings;
 
 namespace UdemyClone.CatalogApi
 {
@@ -27,6 +29,12 @@ namespace UdemyClone.CatalogApi
 		{
 			services.AddAutoMapper(typeof(Startup));
 			services.AddControllers();
+			services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
+			services.AddSingleton<IDatabaseSettings>(ds =>
+			{
+				return ds.GetRequiredService<IOptions<DatabaseSettings>>().Value;
+			});
+
 			services.AddSwaggerGen(c =>
 			{
 				c.SwaggerDoc("v1", new OpenApiInfo { Title = "UdemyClone.CatalogApi", Version = "v1" });
