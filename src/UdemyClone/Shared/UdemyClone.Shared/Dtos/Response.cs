@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace UdemyClone.Shared.Dtos
 {
-	public class ResponseDto<T>
+	public class Response<T>
 	{
 		public T Data { get; private set; }
 
@@ -17,19 +17,19 @@ namespace UdemyClone.Shared.Dtos
 		public List<String> Errors { get; set; }
 
 
-		public static ResponseDto<T> Success(T data, int statusCode)
+		public static Response<T> Success(T data, int statusCode)
 		{
-			return new ResponseDto<T> { Data = data, StatusCode = statusCode, IsSuccessfull = true };
+			return new Response<T> { Data = data, StatusCode = statusCode, IsSuccessfull = true };
 		}
 
-		public static ResponseDto<T> Success(int statusCode)
+		public static Response<T> Success(int statusCode)
 		{
-			return new ResponseDto<T> { Data = default(T), StatusCode = statusCode, IsSuccessfull = true };
+			return new Response<T> { Data = default(T), StatusCode = statusCode, IsSuccessfull = true };
 		}
 
-		public static ResponseDto<T> Fail(List<String> errors, int statusCode)
+		public static Response<T> Fail(List<String> errors, int statusCode)
 		{
-			return new ResponseDto<T>
+			return new Response<T>
 			{
 				Errors = errors,
 				StatusCode = statusCode,
@@ -37,9 +37,9 @@ namespace UdemyClone.Shared.Dtos
 			};
 		}
 
-		public static ResponseDto<T> Fail(String error, int statusCode)
+		public static Response<T> Fail(String error, int statusCode)
 		{
-			return new ResponseDto<T>
+			return new Response<T>
 			{
 				Errors = new List<string> { error },
 				StatusCode = statusCode,

@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UdemyClone.CatalogApi.Services;
 using UdemyClone.CatalogApi.Settings;
 
 namespace UdemyClone.CatalogApi
@@ -27,8 +28,10 @@ namespace UdemyClone.CatalogApi
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddScoped<ICategoryService, CategoryService>();
 			services.AddAutoMapper(typeof(Startup));
 			services.AddControllers();
+
 			services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
 			services.AddSingleton<IDatabaseSettings>(ds =>
 			{

@@ -1,6 +1,6 @@
 ﻿namespace UdemyClone.CatalogApi.Dtos
 {
-	public class CourseUpdateDto
+	internal class CourseUpdateDto
 	{
 		public string Id { get; set; }
 		public string CategoryId { get; set; }

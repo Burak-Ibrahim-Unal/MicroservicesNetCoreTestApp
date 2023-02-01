@@ -2,7 +2,7 @@
 
 namespace UdemyClone.CatalogApi.Dtos
 {
-	public class CourseCreateDto
+	internal class CourseCreateDto
 	{
 		public string CategoryId { get; set; }
 		public string UserId { get; set; }
