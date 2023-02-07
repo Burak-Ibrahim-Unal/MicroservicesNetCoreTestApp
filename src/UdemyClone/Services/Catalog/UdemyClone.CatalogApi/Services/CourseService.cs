@@ -34,9 +34,15 @@ namespace UdemyClone.CatalogApi.Services
 				foreach (var course in courses)
 				{
 					course.Category = await _categoryCollection.Find<Category>(category => category.Id == course.CategoryId).FirstAsync();
-				
+
 				}
 			}
+			else
+			{
+				courses = new List<Course> { };
+			}
+
+			return Response<List<CourseDto>>.Success(_mapper.Map<List<CourseDto>>(courses), 200);
 		}
 
 

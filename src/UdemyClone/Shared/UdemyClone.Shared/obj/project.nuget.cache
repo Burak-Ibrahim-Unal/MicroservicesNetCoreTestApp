@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C6c4tdGsRNWBq6v8+vN+AxlKnrJrSgyo3S3QBOVAbm8ZAcHiaT1f/ESy2b0QQaIrWPmbcpzmhTJdzvQ7oQ//hg==",
+  "dgSpecHash": "6wPaUePVZsGxt7Md1FKwL+BYnu44k8OH0OTCQnWofZdF102GQZyR8mqjz0Lq6o2yguE10YF+gBIpeGYt22q/9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ibrahimburak.unal\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Burak\\Desktop\\Github\\MicroservicesNetCoreTestApp\\src\\UdemyClone\\Shared\\UdemyClone.Shared\\UdemyClone.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
