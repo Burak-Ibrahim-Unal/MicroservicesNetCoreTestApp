@@ -45,6 +45,15 @@ namespace UdemyClone.CatalogApi.Services
 			return Response<List<CourseDto>>.Success(_mapper.Map<List<CourseDto>>(courses), 200);
 		}
 
+		public async Task<Response<CourseDto>> GetByIdAsync(string id)
+		{
+			var course = await _courseCollection.Find(course => course.Id == id).FirstOrDefaultAsync();
+
+			if (course == null) return Response<CourseDto>.Fail("Course is not found", 404);
+			course.Category = await _categoryCollection.Find<Category>(category => category.Id == course.CategoryId).FirstAsync();
+
+			return Response<CourseDto>.Success(_mapper.Map<CourseDto>(course), 200);
+		}
 
 	}
 }
