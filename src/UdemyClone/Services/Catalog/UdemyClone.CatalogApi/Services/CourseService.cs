@@ -11,7 +11,7 @@ using UdemyClone.Shared.Dtos;
 
 namespace UdemyClone.CatalogApi.Services
 {
-	internal class CourseService
+	internal class CourseService : ICourseService
 	{
 		private readonly IMongoCollection<Course> _courseCollection;
 		private readonly IMongoCollection<Category> _categoryCollection;
