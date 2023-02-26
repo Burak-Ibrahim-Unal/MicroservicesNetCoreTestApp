@@ -13,7 +13,6 @@ namespace UdemyClone.CatalogApi.Services
 	{
 		private readonly IMongoCollection<Category> _categoryCollection;
 		private readonly IMapper _mapper;
-		private readonly IDatabaseSettings _databaseSettings;
 
 		public CategoryService(IMapper mapper, IDatabaseSettings databaseSettings)
 		{
