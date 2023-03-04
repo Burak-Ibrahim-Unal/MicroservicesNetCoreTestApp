@@ -29,11 +29,12 @@ namespace UdemyClone.CatalogApi.Services
 			return Response<List<CategoryDto>>.Success(_mapper.Map<List<CategoryDto>>(categories), 200);
 		}
 
-		public async Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto)
+		public async Task<Response<CategoryDto>> CreateAsync(CategoryCreateDto categoryCreateDto)
 		{
-			var category = _mapper.Map<Category>(categoryDto);
-			await _categoryCollection.InsertOneAsync(category);
-			return Response<CategoryDto>.Success(_mapper.Map<CategoryDto>(categoryDto), 200);
+			var newCategory = _mapper.Map<Category>(categoryCreateDto);
+			await _categoryCollection.InsertOneAsync(newCategory);
+
+			return Response<CategoryDto>.Success(_mapper.Map<CategoryDto>(newCategory), 200);
 		}
 
 		public async Task<Response<CategoryDto>> GetByIdAsync(string id)

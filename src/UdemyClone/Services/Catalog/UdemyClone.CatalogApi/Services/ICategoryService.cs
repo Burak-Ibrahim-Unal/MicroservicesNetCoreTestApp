@@ -9,7 +9,7 @@ namespace UdemyClone.CatalogApi.Services
 	public interface ICategoryService
 	{
 		Task<Response<List<CategoryDto>>> GetAllAsync();
-		Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto);
+		Task<Response<CategoryDto>> CreateAsync(CategoryCreateDto categoryCreateDto);
 		Task<Response<CategoryDto>> GetByIdAsync(string id);
 
 	}
