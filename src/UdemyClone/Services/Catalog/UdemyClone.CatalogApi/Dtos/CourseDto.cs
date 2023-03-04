@@ -3,7 +3,7 @@ using UdemyClone.CatalogApi.Models;
 
 namespace UdemyClone.CatalogApi.Dtos
 {
-	internal class CourseDto
+	public class CourseDto
 	{
 		public string Id { get; set; }
 		public string CategoryId { get; set; }

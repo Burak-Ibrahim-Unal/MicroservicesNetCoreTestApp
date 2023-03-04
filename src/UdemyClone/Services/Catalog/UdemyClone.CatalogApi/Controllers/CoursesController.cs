@@ -9,14 +9,16 @@ namespace UdemyClone.CatalogApi.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	internal class CoursesController : CustomBaseController
+	public class CoursesController : CustomBaseController
 	{
 		private readonly ICourseService _courseService;
 
-		internal CoursesController(ICourseService courseService)
+		public CoursesController(ICourseService courseService)
 		{
 			_courseService = courseService;
 		}
+
+		[HttpGet]
 		public async Task<IActionResult> GetAll()
 		{
 			var response = await _courseService.GetAllAsync();
@@ -32,7 +34,8 @@ namespace UdemyClone.CatalogApi.Controllers
 			return CreateActionResultInstance(response);
 		}
 
-		[Route("api/[controller]/GetAllByUserId/{userid}")]
+		[HttpGet]
+		[Route("GetAllByUserId/{userid}")]
 		public async Task<IActionResult> GetAllByUserId(string userid)
 		{
 			var response = await _courseService.GetAllByUserIdAsync(userid);

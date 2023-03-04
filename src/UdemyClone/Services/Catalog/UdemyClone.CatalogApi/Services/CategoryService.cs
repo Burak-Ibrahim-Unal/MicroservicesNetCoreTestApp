@@ -9,7 +9,7 @@ using UdemyClone.Shared.Dtos;
 
 namespace UdemyClone.CatalogApi.Services
 {
-	internal class CategoryService : ICategoryService
+	public class CategoryService : ICategoryService
 	{
 		private readonly IMongoCollection<Category> _categoryCollection;
 		private readonly IMapper _mapper;

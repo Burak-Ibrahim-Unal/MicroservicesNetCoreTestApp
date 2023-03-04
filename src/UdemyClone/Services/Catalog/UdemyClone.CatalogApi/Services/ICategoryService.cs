@@ -6,7 +6,7 @@ using UdemyClone.Shared.Dtos;
 
 namespace UdemyClone.CatalogApi.Services
 {
-	internal interface ICategoryService
+	public interface ICategoryService
 	{
 		Task<Response<List<CategoryDto>>> GetAllAsync();
 		Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto);

@@ -7,7 +7,7 @@ using UdemyClone.Shared.Dtos;
 
 namespace UdemyClone.CatalogApi.Services
 {
-	interface ICourseService
+	public interface ICourseService
 	{
 		Task<Response<List<CourseDto>>> GetAllAsync();
 
